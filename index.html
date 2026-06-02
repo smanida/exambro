@@ -1,2 +1,65 @@
-<html>
-  </html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Konfigurasi SEB</title>
+
+    <script>
+        window.onload = function () {
+            const link = document.createElement('a');
+            link.href = 'https://smanida.github.io/exambro/EXO-SISWA-SebClientSettings.seb';
+            link.download = 'EXO-SISWA-SebClientSettings.seb';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        };
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background: #f5f7fa;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,.1);
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: #0066cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .btn:hover {
+            background: #0052a3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Konfigurasi Safe Exam Browser</h2>
+    <p>Jika unduhan tidak dimulai otomatis, klik tombol di bawah ini.</p>
+
+    <a class="btn"
+       href="https://smanida.github.io/exambro/EXO-SISWA-SebClientSettings.seb"
+       download>
+        Download File SEB
+    </a>
+</div>
+
+</body>
+</html>
